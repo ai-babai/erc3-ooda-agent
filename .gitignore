@@ -1,0 +1,56 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+
+# Environment variables
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs - ignore all log files but keep directory structure
+logs/**/*
+!logs/**/.gitkeep
+*.log
+task_logs/errors/*.txt
+task_logs/sessions/*.json
+task_logs/tasks/*.json
+# Keep directory structure
+!task_logs/.gitkeep
+!task_logs/errors/.gitkeep
+!task_logs/sessions/.gitkeep
+!task_logs/tasks/.gitkeep
+
+# OS
+.DS_Store
+Thumbs.db
+
