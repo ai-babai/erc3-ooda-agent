@@ -1,8 +1,8 @@
 # OODA Agent ERC
 
-Экспериментальный агент для ERC3 challenge, сфокусированный на максимальной скорости инференса и выполнения задач.
+Экспериментальный агент для ERC3 challenge, сфокусированный на скорости инференса и выполнения задач.
 
-Реализует архитектуру **OODA Loop (Observe-Orient-Decide-Act)** с использованием **Cerebras** (через OpenRouter) для минимизации задержек.
+Реализует архитектуру **OODA Loop (Observe-Orient-Decide-Act)** с использованием **Cerebras** (через OpenRouter) для скорости.
 
 ## Результаты и метрики
 
@@ -16,6 +16,8 @@
 **Locality Leaderboard:** #5 место ([таблица](https://erc.timetoact-group.at/assets/erc3.html#locality))
 - **Время:** ~11 сек
 - **Score:** ~0.320
+
+Статья “ERC3 | Путь Qwen-агента на 4ое место по скорости в ERC3” (как это было сделано): `https://telegra.ph/ERC3--Put-Qwen-agenta-na-4oe-mesto-po-skorosti-v-ERC3-12-16`
 
 *Примечание: Агент оптимизирован для быстрого прохождения простых и средних сценариев. В сложных кейсах возможны галлюцинации или ошибки логики в угоду скорости.*
 
@@ -64,7 +66,7 @@ python main.py
 Примеры:
 ```bash
 # Запуск конкретной задачи на быстрой модели
-python main.py -t add_time_entry_me -m qwen
+python main.py -t 1 -m qwen -b dev
 
 # Последовательный прогон для детального лога
 python main.py --sequential
