@@ -59,7 +59,7 @@ python main.py
 
 - `-b, --benchmark`: `dev` (по умолчанию), `test`, `prod`.
 - `-t, --task`: Запуск конкретных задач (например, `-t 1 -t add_time_entry`).
-- `-m, --model`: Выбор модели. По умолчанию `qwen` (Cerebras). Доступны: `grok`, `gpt`.
+- `-m, --model`: Выбор модели. По умолчанию `qwen` (Cerebras). Доступны: `grok`, `grok-fast`, `gpt`.
 - `-w, --workers`: Количество потоков (по умолчанию 5).
 - `--sequential`: Последовательный режим (для отладки).
 

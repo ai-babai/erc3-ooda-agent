@@ -110,4 +110,8 @@ ooda_agent_erc/
 
 MIT
 
+## Repository
+
+Source code: [ai-babai/erc3-ooda-agent](https://github.com/ai-babai/erc3-ooda-agent/tree/main)
+
 
