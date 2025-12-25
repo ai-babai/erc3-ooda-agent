@@ -10,7 +10,6 @@
 
 **Speed Leaderboard:** #4 место ([таблица](https://erc.timetoact-group.at/assets/erc3.html#speed))
 - **Время на задачу:** ~10 сек
-- **Стоимость:** ~$0.34
 - **Score:** ~0.350
 
 **Locality Leaderboard:** #5 место ([таблица](https://erc.timetoact-group.at/assets/erc3.html#locality))

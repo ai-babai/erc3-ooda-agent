@@ -10,7 +10,6 @@ This agent is not aiming for perfect accuracy — its main feature is fast respo
 
 **Speed Leaderboard:** #4 ([table](https://erc.timetoact-group.at/assets/erc3.html#speed))
 - **Time per task:** ~10s
-- **Cost:** ~$0.34
 - **Score:** ~0.350
 
 **Locality Leaderboard:** #5 ([table](https://erc.timetoact-group.at/assets/erc3.html#locality))
