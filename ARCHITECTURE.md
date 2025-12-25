@@ -2,6 +2,8 @@
 
 This document describes the **actual** architecture implemented in this repository (as-is), and highlights where common “high-level descriptions” can be slightly misleading.
 
+Repository: [ai-babai/erc3-ooda-agent](https://github.com/ai-babai/erc3-ooda-agent/tree/main)
+
 ---
 
 ## 🇷🇺 Русская версия
