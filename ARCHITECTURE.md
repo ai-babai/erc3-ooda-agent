@@ -2,8 +2,6 @@
 
 This document describes the **actual** architecture implemented in this repository (as-is), and highlights where common “high-level descriptions” can be slightly misleading.
 
-Repository: [ai-babai/erc3-ooda-agent](https://github.com/ai-babai/erc3-ooda-agent/tree/main)
-
 ---
 
 ## 🇷🇺 Русская версия
@@ -97,22 +95,6 @@ Repository: [ai-babai/erc3-ooda-agent](https://github.com/ai-babai/erc3-ooda-age
 
 ---
 
-## Частые неточности в “красивых описаниях” (и как в реальности тут)
-
-- **“Scratch сбрасывается каждый шаг”**  
-  На практике в коде хранится “хвост” последнего `scratch` (`[-500:]`). Он обновляется каждый шаг, но “сброс” как отдельная операция не делается.
-
-- **“Memory хранит критические ошибки”**  
-  Ошибки добавляются в `memory` как `ERR[...]`, но при сжатии `compress_memory()` строки с `"ERR"` выкидываются. Поэтому “ошибки в памяти” — не гарантия.
-
-- **“ID строго проверяется на то, что он был получен из API”**  
-  Проверка ID — эвристическая (на “явно фейковые” паттерны), а не проверка “ID ∈ ранее увиденные”.
-
-- **“Token-bucket rate limiting”**  
-  Реально — фиксированный интервал между вызовами (см. выше).
-
----
-
 ## 🇬🇧 English Version
 
 ### Overview
@@ -146,5 +128,11 @@ The loop ends on `Req_ProvideAgentResponse`, `done=true`, or `MAX_STEPS` exhaust
 - **Parallelism**: `ThreadPoolExecutor` (default 5 workers)
 - **Rate limiting**: fixed minimum interval throttling (not a full token bucket)
 - **Default model**: `qwen/qwen3-235b-a22b-2507` with OpenRouter provider preference `Cerebras`
+
+---
+
+This document describes the actual architecture implemented in this repository (as-is), and highlights where common “high-level descriptions” can be slightly misleading.
+
+Repository: [ai-babai/erc3-ooda-agent](https://github.com/ai-babai/erc3-ooda-agent/tree/main)
 
 
